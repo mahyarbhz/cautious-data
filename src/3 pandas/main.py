@@ -6,3 +6,9 @@ import pandas as pd
 # print(pd.Series({'a': 1, 2: 'b'})['a'])
 #
 # print(ser.loc['a'])
+
+# presidents_df = pd.read_csv('https://sololearn.com/uploads/files/president_heights_party.csv', index_col='age')
+presidents_df = pd.read_csv('https://sololearn.com/uploads/files/president_heights_party.csv', index_col='name')
+
+print(presidents_df.iloc[15])
+print(presidents_df.iloc[15:18]) # get a range of data
